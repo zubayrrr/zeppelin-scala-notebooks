@@ -1,1 +1,1917 @@
-﻿{"paragraphs":[{"text":"// 1. Write a Scala program to print \"Hello, world\" and version of the Scala language.\n\nprintln(\"Hello, world\")\nprintln(\"Scala language: \" + util.Properties.versionString)","user":"anonymous","dateUpdated":"2021-12-09T18:00:49+0000","progress":0,"config":{"editorSetting":{"language":"scala","editOnDblClick":false,"completionKey":"TAB","completionSupport":true},"colWidth":12,"editorMode":"ace/mode/scala","fontSize":9,"results":{},"enabled":true},"settings":{"params":{},"forms":{}},"results":{"code":"SUCCESS","msg":[{"type":"TEXT","data":"Hello, world\nScala language: version 2.11.12\n"}]},"apps":[],"runtimeInfos":{},"progressUpdateIntervalMs":500,"jobName":"paragraph_1639072565700_973836509","id":"paragraph_1639072565700_973836509","dateCreated":"2021-12-09T17:56:05+0000","dateStarted":"2021-12-09T17:57:17+0000","dateFinished":"2021-12-09T17:57:18+0000","status":"FINISHED","focus":false},{"text":"// 2. Write a Scala program to compute the sum of the two given integer values. If the two values are the same, then return triples their sum.\n\ndef test(x:Int, y:Int) : Int = {\n    if (x==y) 3 * (x + y) else x + y\n}\n\nprintln(\"Result: \" + test(1, 2))\nprintln(\"Result: \" + test(2, 2))\n","user":"anonymous","dateUpdated":"2021-12-09T18:00:42+0000","progress":0,"config":{"editorSetting":{"language":"scala","editOnDblClick":false,"completionKey":"TAB","completionSupport":true},"colWidth":12,"editorMode":"ace/mode/scala","fontSize":9,"results":{},"enabled":true},"settings":{"params":{},"forms":{}},"results":{"code":"SUCCESS","msg":[{"type":"TEXT","data":"Result: 3\nResult: 12\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Int\u001b[0m\n"}]},"apps":[],"runtimeInfos":{},"progressUpdateIntervalMs":500,"jobName":"paragraph_1639072644265_315942869","id":"paragraph_1639072644265_315942869","dateCreated":"2021-12-09T17:57:24+0000","dateStarted":"2021-12-09T18:00:17+0000","dateFinished":"2021-12-09T18:00:17+0000","status":"FINISHED"},{"text":"// 3. Write a Scala program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.\n\ndef test(x:Int) : Int = \n{\n    val abs_diff = Math.abs(x - 51)\n    if (x > 51) 3 * abs_diff else abs_diff\n}\n\nprint(\"Result \" + test(60))\nprint(\"Result \" + test(30))","user":"anonymous","dateUpdated":"2021-12-09T18:00:38+0000","progress":0,"config":{"editorSetting":{"language":"scala","editOnDblClick":false,"completionKey":"TAB","completionSupport":true},"colWidth":12,"editorMode":"ace/mode/scala","fontSize":9,"results":{},"enabled":true},"settings":{"params":{},"forms":{}},"results":{"code":"SUCCESS","msg":[{"type":"TEXT","data":"Result 27Result 21\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int)Int\u001b[0m\n"}]},"apps":[],"runtimeInfos":{},"progressUpdateIntervalMs":500,"jobName":"paragraph_1639072347749_1897092591","id":"paragraph_1639072347749_1897092591","dateCreated":"2021-12-09T17:52:27+0000","dateStarted":"2021-12-09T17:52:38+0000","dateFinished":"2021-12-09T17:52:58+0000","status":"FINISHED"},{"text":"","user":"anonymous","dateUpdated":"2021-12-09T18:01:10+0000","progress":0,"config":{"colWidth":12,"fontSize":9,"results":{},"enabled":true,"editorSetting":{}},"settings":{"params":{},"forms":{}},"apps":[],"runtimeInfos":{},"progressUpdateIntervalMs":500,"jobName":"paragraph_1639072357999_1026081954","id":"paragraph_1639072357999_1026081954","dateCreated":"2021-12-09T17:52:37+0000","status":"READY"}],"name":"Scala practice","id":"2GNR6HCRU","defaultInterpreterGroup":"spark","version":"0.10.0","noteParams":{},"noteForms":{},"angularObjects":{},"config":{"isZeppelinNotebookCronEnable":false,"looknfeel":"simple","personalizedMode":"false"},"info":{},"path":"/Scala practice"}
+﻿{
+  "paragraphs": [
+    {
+      "text": "// 1. Write a Scala program to print \"Hello, world\" and version of the Scala language.\n\nprintln(\"Hello, world\")\nprintln(\"Scala language: \" + util.Properties.versionString)",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-09T18:00:49+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hello, world\nScala language: version 2.11.12\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639072565700_973836509",
+      "id": "paragraph_1639072565700_973836509",
+      "dateCreated": "2021-12-09T17:56:05+0000",
+      "dateStarted": "2021-12-09T17:57:17+0000",
+      "dateFinished": "2021-12-09T17:57:18+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:307"
+    },
+    {
+      "text": "// 2. Write a Scala program to compute the sum of the two given integer values. If the two values are the same, then return triples their sum.\n\ndef test(x:Int, y:Int) : Int = {\n    if (x==y) 3 * (x + y) else x + y\n}\n\nprintln(\"Result: \" + test(1, 2))\nprintln(\"Result: \" + test(2, 2))\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-09T18:00:42+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: 3\nResult: 12\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Int\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639072644265_315942869",
+      "id": "paragraph_1639072644265_315942869",
+      "dateCreated": "2021-12-09T17:57:24+0000",
+      "dateStarted": "2021-12-09T18:00:17+0000",
+      "dateFinished": "2021-12-09T18:00:17+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:308"
+    },
+    {
+      "text": "// 3. Write a Scala program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.\n\ndef test(x:Int) : Int = \n{\n    val abs_diff = Math.abs(x - 51)\n    if (x > 51) 3 * abs_diff else abs_diff\n}\n\nprint(\"Result \" + test(60))\nprint(\"Result \" + test(30))",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-09T18:00:38+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result 27Result 21\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int)Int\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639072347749_1897092591",
+      "id": "paragraph_1639072347749_1897092591",
+      "dateCreated": "2021-12-09T17:52:27+0000",
+      "dateStarted": "2021-12-09T17:52:38+0000",
+      "dateFinished": "2021-12-09T17:52:58+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:309"
+    },
+    {
+      "text": "// 4. Write a Scala program to check two given integers, and return true if one of them is 30 or if their sum is 30.\n\ndef test(x:Int, y:Int) : Boolean = {\n    x == 30 || y ==30 || (x + y) == 30\n}\n\nprintln(\"Result: \" + test(30, 0))\nprintln(\"Result: \" + test(0, 30))\nprintln(\"Result: \" + test(15, 15))\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-09T18:25:30+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639072357999_1026081954",
+      "id": "paragraph_1639072357999_1026081954",
+      "dateCreated": "2021-12-09T17:52:37+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:310",
+      "dateFinished": "2021-12-09T18:25:31+0000",
+      "dateStarted": "2021-12-09T18:25:30+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: true\nResult: true\nResult: true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074206183_445527515",
+      "id": "paragraph_1639074206183_445527515",
+      "dateCreated": "2021-12-09T18:23:26+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:726",
+      "text": "// 5. Write a Scala program to check a given integer and return true if it is within 20 of 100 or 300. \n\ndef test(x:Int) : Boolean = {\n    x < 20 || x < 100 || x < 300\n}\n\nprintln(\"Result: \" + test(40))\nprintln(\"Result: \" + test(400))",
+      "dateUpdated": "2021-12-09T18:27:47+0000",
+      "dateFinished": "2021-12-09T18:27:48+0000",
+      "dateStarted": "2021-12-09T18:27:47+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: true\nResult: false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074338895_325156273",
+      "id": "paragraph_1639074338895_325156273",
+      "dateCreated": "2021-12-09T18:25:38+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1259",
+      "text": "// 6. Write a Scala program to create a new string where 'if' is added to the front of a given string. If the string already begins with 'if', return the string unchanged.\n\ndef strTest(str: String) : String = {\n    if (str.startsWith(\"if\")) str else \"if\" + str\n}\n\nprintln(\"Result: \"+ strTest(\"Hello\"))\nprintln(\"Result: \"+ strTest(\"iftaar\"))\n",
+      "dateUpdated": "2021-12-09T18:31:09+0000",
+      "dateFinished": "2021-12-09T18:31:10+0000",
+      "dateStarted": "2021-12-09T18:31:09+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: ifHello\nResult: iftaar\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074474293_1665323909",
+      "id": "paragraph_1639074474293_1665323909",
+      "dateCreated": "2021-12-09T18:27:54+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1422",
+      "text": "// 7. Write a Scala program to remove the character in a given position of a given string. The given position will be in the range 0...string length -1 inclusive.\n\ndef strTest(str : String, n: Int): String = {\n    str.take(n) + str.drop(n + 1)\n}\n\nprintln(strTest(\"Hello\", 0))\nprintln(strTest(\"Hello\", 1))",
+      "dateUpdated": "2021-12-09T18:40:43+0000",
+      "dateFinished": "2021-12-09T18:40:43+0000",
+      "dateStarted": "2021-12-09T18:40:43+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "ello\nHllo\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String, n: Int)String\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074686005_827690502",
+      "id": "paragraph_1639074686005_827690502",
+      "dateCreated": "2021-12-09T18:31:26+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1540",
+      "text": "// 8. Write a Scala program to exchange the first and last characters in a given string and return the new string.\n\ndef strTest(str : String) : String = \n{\n    val len = str.length()\n    if(len <=1) str\n    else str.charAt(len - 1) + str.substring(1, len - 1) + str.charAt(0)\n}\n\nprintln(strTest(\"Hello\"));",
+      "dateUpdated": "2021-12-09T19:36:24+0000",
+      "dateFinished": "2021-12-09T19:36:24+0000",
+      "dateStarted": "2021-12-09T19:36:24+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "oellH\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074206925_132076683",
+      "id": "paragraph_1639074206925_132076683",
+      "dateCreated": "2021-12-09T18:23:26+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:795",
+      "text": "val str:String = \"Hello World\"\n\nval len = str.length()\nval lastChar = str.charAt(len - 1)\nval chars = str.substring(1, len -1 ) // all characters in the string except first and last",
+      "dateUpdated": "2021-12-09T19:44:54+0000",
+      "dateFinished": "2021-12-09T19:44:22+0000",
+      "dateStarted": "2021-12-09T19:44:22+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mstr\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = Hello World\n\u001b[1m\u001b[34mlen\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 11\n\u001b[1m\u001b[34mlastChar\u001b[0m: \u001b[1m\u001b[32mChar\u001b[0m = d\n\u001b[1m\u001b[34mchars\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = ello Worl\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074207487_1406882391",
+      "id": "paragraph_1639074207487_1406882391",
+      "dateCreated": "2021-12-09T18:23:27+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:864",
+      "text": "// 9. Write a Scala program to create a new string which is 4 copies of the 2 front characters of a given string.If the given string length is less than 2 return the original string.\n\ndef strTest(str: String) : String = {\n    if (str.length() < 2) str\n    else str.substring(0, 2) * 4\n}\n\nprintln(strTest(\"Hello\"))",
+      "dateUpdated": "2021-12-09T19:57:57+0000",
+      "dateFinished": "2021-12-09T19:57:58+0000",
+      "dateStarted": "2021-12-09T19:57:57+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "HeHeHeHe\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074207673_519610480",
+      "id": "paragraph_1639074207673_519610480",
+      "dateCreated": "2021-12-09T18:23:27+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:933",
+      "text": "// 10. Write a Scala program to create a new string with the last char added at the front and back of a given string of length 1 or more.\n\ndef strTest(str:String) : String = {\n    val len = str.length()\n    val lastChar = str.charAt(len - 1)\n    lastChar + str + lastChar\n}\n\nprintln(strTest(\"Hello\"))",
+      "dateUpdated": "2021-12-09T20:02:36+0000",
+      "dateFinished": "2021-12-09T20:02:36+0000",
+      "dateStarted": "2021-12-09T20:02:36+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "oHelloo\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074207865_110314657",
+      "id": "paragraph_1639074207865_110314657",
+      "dateCreated": "2021-12-09T18:23:27+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1002",
+      "text": "// 11. Write a Scala program to check whether a given positive number is a multiple of 3 or a multiple of 7.\n\ndef test(x:Int) : Boolean = {\n    x % 3 == 0 || x % 7 ==0\n}\n\nprintln(test(7))",
+      "dateUpdated": "2021-12-09T20:13:48+0000",
+      "dateFinished": "2021-12-09T20:13:49+0000",
+      "dateStarted": "2021-12-09T20:13:48+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074208066_1026835047",
+      "id": "paragraph_1639074208066_1026835047",
+      "dateCreated": "2021-12-09T18:23:28+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1071",
+      "text": "// 12. Write a Scala program to create a new string taking the first 3 characters of a given string and return the string with the 3 characters added at both the front and back. \n// If the given string length is less than 3, use whatever characters are there.\n\ndef strTest(str: String) : String = {\n    if (str.length() < 3) str * 3\n    else str.substring(0, 3) + str + str.substring(0, 3)\n}\n\nprintln(strTest(\"Ho\"))\n\n\n",
+      "dateUpdated": "2021-12-09T20:19:21+0000",
+      "dateFinished": "2021-12-09T20:19:22+0000",
+      "dateStarted": "2021-12-09T20:19:21+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "HoHoHo\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639080929921_1626178201",
+      "id": "paragraph_1639080929921_1626178201",
+      "dateCreated": "2021-12-09T20:15:29+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2856",
+      "text": "// 13.  Write a Scala program to check whether a given string starts with 'Sc' or not.\n\ndef strTest(str: String) : Boolean = { \n    str.take(2) == \"Sc\"  \n}\n\nprintln(strTest(\"Scala\"))",
+      "dateUpdated": "2021-12-09T20:24:43+0000",
+      "dateFinished": "2021-12-09T20:24:44+0000",
+      "dateStarted": "2021-12-09T20:24:43+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639080927466_353545840",
+      "id": "paragraph_1639080927466_353545840",
+      "dateCreated": "2021-12-09T20:15:27+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2787",
+      "text": " def test(str1: String): Boolean = \n    {\n     str1.take(2) == \"Sc\"\n    }     \n      println(\"Result: \" + test(\"Scala\"));\n      println(\"Result: \" + test(\"abcd\"));\n      println(\"Result: \" + test(\"sc\"));\n      println(\"Result: \" + test(\"a\"));\n    ",
+      "dateUpdated": "2021-12-09T20:26:18+0000",
+      "dateFinished": "2021-12-09T20:26:18+0000",
+      "dateStarted": "2021-12-09T20:26:18+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: true\nResult: false\nResult: false\nResult: false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(str1: String)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074208293_420894883",
+      "id": "paragraph_1639074208293_420894883",
+      "dateCreated": "2021-12-09T18:23:28+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1140",
+      "text": "// 14. Write a Scala program to check whether one of the given temperatures is less than 0 and the other is greater than 100.\n\ndef test(x:Int, y:Int) : Boolean = {\n    (x < 0 && y > 100) || (y < 0 && x > 100)\n}\n\nprintln(test(200, -20))",
+      "dateUpdated": "2021-12-09T20:29:48+0000",
+      "dateFinished": "2021-12-09T20:29:48+0000",
+      "dateStarted": "2021-12-09T20:29:48+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074201205_2143864233",
+      "id": "paragraph_1639074201205_2143864233",
+      "dateCreated": "2021-12-09T18:23:21+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:657",
+      "text": "// 15. Write a Scala program to check two given integers whether either of them is in the range 100..200 inclusive.\n\ndef test(x:Int, y:Int) : Boolean = {\n    (x >= 100 && x <= 200) || (y >= 100 && y <= 200);\n}\n\nprintln(test(89, 100))",
+      "dateUpdated": "2021-12-09T20:49:38+0000",
+      "dateFinished": "2021-12-09T20:49:38+0000",
+      "dateStarted": "2021-12-09T20:49:38+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639074343228_2060626063",
+      "id": "paragraph_1639074343228_2060626063",
+      "dateCreated": "2021-12-09T18:25:43+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1328",
+      "text": "// 16. Write a Scala program to check whether three given integer values are in the range 20..50 inclusive. Return true if 1 or more of them are in the said range otherwise false.\n\ndef test(x:Int, y:Int, z:Int) : Boolean = {\n    (x >= 20 && x <= 50) ||  (y >= 20 && y <= 50) || (z >= 20 && z <= 50)\n}\n\nprintln(test(30, 100, 200))",
+      "dateUpdated": "2021-12-09T20:53:21+0000",
+      "dateFinished": "2021-12-09T20:53:21+0000",
+      "dateStarted": "2021-12-09T20:53:21+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int, z: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639079102821_1157169557",
+      "id": "paragraph_1639079102821_1157169557",
+      "dateCreated": "2021-12-09T19:45:02+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2424",
+      "text": "// 17. 17. Write a Scala program to check whether two given integer values are in the range 20..50 inclusive. Return true if 1 or other is in the said range otherwise false.\ndef test(x:Int, y:Int) : Boolean = {\n    (x <= 20 || y >= 50) ||  (y <= 20 || x >= 50) \n}\n\nprintln(test(25, 40))",
+      "dateUpdated": "2021-12-09T20:59:40+0000",
+      "dateFinished": "2021-12-09T20:59:40+0000",
+      "dateStarted": "2021-12-09T20:59:40+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083416844_1077801562",
+      "id": "paragraph_1639083416844_1077801562",
+      "dateCreated": "2021-12-09T20:56:56+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5438",
+      "text": "// 18. Write a Scala program to check whether a string 'yt' appears at index 1 in a given string. If it appears return a string without 'yt' otherwise return the original string.\n\ndef strTest(str: String) : String = {\n    if (str.indexOf(\"yt\") == 1) str.replaceFirst(\"yt\", \"\")\n    else str\n}\n\nprintln(strTest(\" yt video\"))\n",
+      "dateUpdated": "2021-12-09T21:14:54+0000",
+      "dateFinished": "2021-12-09T21:14:54+0000",
+      "dateStarted": "2021-12-09T21:14:54+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  video\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083361462_704064927",
+      "id": "paragraph_1639083361462_704064927",
+      "dateCreated": "2021-12-09T20:56:01+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3782",
+      "text": "// 19. Write a Scala program to check the largest number among three given integers. \n\ndef test(x:Int, y:Int, z:Int) : Int = {\n    List(x, y, z).max\n}\n\nprintln(test(1, 2, 3))",
+      "dateUpdated": "2021-12-09T21:30:12+0000",
+      "dateFinished": "2021-12-09T21:30:12+0000",
+      "dateStarted": "2021-12-09T21:30:12+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "3\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int, z: Int)Int\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083361922_525162556",
+      "id": "paragraph_1639083361922_525162556",
+      "dateCreated": "2021-12-09T20:56:01+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3851",
+      "text": "// 20. Write a Scala program to check which number is nearest to the value 100 among two given integers. Return 0 if the two numbers are equal.\n\ndef test(x:Int, y:Int) : Int = {\n    val x_diff = Math.abs(x - 100)\n    val y_diff = Math.abs(y - 100)\n    if (x_diff == y_diff) 0\n    else if (x_diff < y_diff) x\n    else y\n}\n\nprintln(test(95, 90))",
+      "dateUpdated": "2021-12-09T21:33:53+0000",
+      "dateFinished": "2021-12-09T21:33:54+0000",
+      "dateStarted": "2021-12-09T21:33:53+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "95\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Int\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083362092_432563359",
+      "id": "paragraph_1639083362092_432563359",
+      "dateCreated": "2021-12-09T20:56:02+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3920",
+      "text": "// 21. Write a Scala program to check whether two given integers are in the range 40..50 inclusive, or they are both in the range 50..60 inclusive.\n\ndef test(x:Int, y:Int) : Boolean = {\n     List(x, y).forall { m => m >= 40 && m <= 50 } || List(x, y).forall { n => n >= 50 && n <= 60 }\n}\n\nprintln(test(78, 95))",
+      "dateUpdated": "2021-12-09T21:52:33+0000",
+      "dateFinished": "2021-12-09T21:52:33+0000",
+      "dateStarted": "2021-12-09T21:52:33+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083362415_1466287338",
+      "id": "paragraph_1639083362415_1466287338",
+      "dateCreated": "2021-12-09T20:56:02+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4058",
+      "text": " // lambda expression\n    val ex1 = (x:Int) => x + 2\n  \n    // with multiple parameters\n    val ex2 = (x:Int, y:Int) => x * y\n      \n    println(ex1(7))\n    println(ex2(2, 3))\n",
+      "dateUpdated": "2021-12-09T21:55:41+0000",
+      "dateFinished": "2021-12-09T21:55:42+0000",
+      "dateStarted": "2021-12-09T21:55:41+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "9\n6\n\u001b[1m\u001b[34mex1\u001b[0m: \u001b[1m\u001b[32mInt => Int\u001b[0m = <function1>\n\u001b[1m\u001b[34mex2\u001b[0m: \u001b[1m\u001b[32m(Int, Int) => Int\u001b[0m = <function2>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083363153_371069970",
+      "id": "paragraph_1639083363153_371069970",
+      "dateCreated": "2021-12-09T20:56:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4403"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083364043_1234180454",
+      "id": "paragraph_1639083364043_1234180454",
+      "dateCreated": "2021-12-09T20:56:04+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4817"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083364741_1733789621",
+      "id": "paragraph_1639083364741_1733789621",
+      "dateCreated": "2021-12-09T20:56:04+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5162"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083365054_1026905949",
+      "id": "paragraph_1639083365054_1026905949",
+      "dateCreated": "2021-12-09T20:56:05+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5300"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083364695_1908340791",
+      "id": "paragraph_1639083364695_1908340791",
+      "dateCreated": "2021-12-09T20:56:04+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5093"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083368030_842019905",
+      "id": "paragraph_1639083368030_842019905",
+      "dateCreated": "2021-12-09T20:56:08+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5369"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083364325_290345483",
+      "id": "paragraph_1639083364325_290345483",
+      "dateCreated": "2021-12-09T20:56:04+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4955"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083363603_2066211451",
+      "id": "paragraph_1639083363603_2066211451",
+      "dateCreated": "2021-12-09T20:56:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4610"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083364883_119593833",
+      "id": "paragraph_1639083364883_119593833",
+      "dateCreated": "2021-12-09T20:56:04+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5231"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083364478_1184645618",
+      "id": "paragraph_1639083364478_1184645618",
+      "dateCreated": "2021-12-09T20:56:04+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:5024"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083363865_933382036",
+      "id": "paragraph_1639083363865_933382036",
+      "dateCreated": "2021-12-09T20:56:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4748"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083364173_1184816037",
+      "id": "paragraph_1639083364173_1184816037",
+      "dateCreated": "2021-12-09T20:56:04+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4886"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083363811_1511468592",
+      "id": "paragraph_1639083363811_1511468592",
+      "dateCreated": "2021-12-09T20:56:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4679"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083363274_2097981411",
+      "id": "paragraph_1639083363274_2097981411",
+      "dateCreated": "2021-12-09T20:56:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4472"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083362836_956496804",
+      "id": "paragraph_1639083362836_956496804",
+      "dateCreated": "2021-12-09T20:56:02+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4265"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083363422_241800160",
+      "id": "paragraph_1639083363422_241800160",
+      "dateCreated": "2021-12-09T20:56:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4541"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083363069_2120570334",
+      "id": "paragraph_1639083363069_2120570334",
+      "dateCreated": "2021-12-09T20:56:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4334"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083362790_1810103603",
+      "id": "paragraph_1639083362790_1810103603",
+      "dateCreated": "2021-12-09T20:56:02+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4196"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083362575_1411355157",
+      "id": "paragraph_1639083362575_1411355157",
+      "dateCreated": "2021-12-09T20:56:02+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4127"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639083362287_1499408895",
+      "id": "paragraph_1639083362287_1499408895",
+      "dateCreated": "2021-12-09T20:56:02+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:3989"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639079103327_1432125220",
+      "id": "paragraph_1639079103327_1432125220",
+      "dateCreated": "2021-12-09T19:45:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:2493"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639079103640_1145259231",
+      "id": "paragraph_1639079103640_1145259231",
+      "dateCreated": "2021-12-09T19:45:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:2562"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639079103929_605378034",
+      "id": "paragraph_1639079103929_605378034",
+      "dateCreated": "2021-12-09T19:45:03+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:2631"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639081349983_1395146639",
+      "id": "paragraph_1639081349983_1395146639",
+      "dateCreated": "2021-12-09T20:22:29+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:3094"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639081350351_633184893",
+      "id": "paragraph_1639081350351_633184893",
+      "dateCreated": "2021-12-09T20:22:30+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:3163"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639081350804_1350593811",
+      "id": "paragraph_1639081350804_1350593811",
+      "dateCreated": "2021-12-09T20:22:30+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:3370"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639081350543_793383211",
+      "id": "paragraph_1639081350543_793383211",
+      "dateCreated": "2021-12-09T20:22:30+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:3232"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639081350986_1774099697",
+      "id": "paragraph_1639081350986_1774099697",
+      "dateCreated": "2021-12-09T20:22:30+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:3439"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1639081350725_812209158",
+      "id": "paragraph_1639081350725_812209158",
+      "dateCreated": "2021-12-09T20:22:30+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:3301"
+    }
+  ],
+  "name": "Scala practice",
+  "id": "2GNR6HCRU",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "simple",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Scala practice"
+}
