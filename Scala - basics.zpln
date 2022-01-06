@@ -1,0 +1,1129 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "\n// 1. Write a Scala program to print \"Hello, world\" and version of the Scala language.\n\nprintln(\"Hello, world\")\nprintln(\"Scala language: \" + util.Properties.versionString)",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:29:44+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "editorMode": "ace/mode/scala",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hello, world\nScala language: version 2.12.10\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719120_494087096",
+      "id": "20220106-212839_2058127606",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7139",
+      "dateFinished": "2022-01-06T21:29:44+0530",
+      "dateStarted": "2022-01-06T21:29:44+0530"
+    },
+    {
+      "text": "\n// 2. Write a Scala program to compute the sum of the two given integer values. If the two values are the same, then return triples their sum.\n\ndef test(x:Int, y:Int) : Int = {\n    if (x==y) 3 * (x + y) else x + y\n}\n\nprintln(\"Result: \" + test(1, 2))\nprintln(\"Result: \" + test(2, 2))\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:29:47+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: 3\nResult: 12\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Int\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719120_721462014",
+      "id": "20220106-212839_1378024823",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7140",
+      "dateFinished": "2022-01-06T21:29:47+0530",
+      "dateStarted": "2022-01-06T21:29:47+0530"
+    },
+    {
+      "text": "\n// 3. Write a Scala program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.\n\ndef test(x:Int) : Int = \n{\n    val abs_diff = Math.abs(x - 51)\n    if (x > 51) 3 * abs_diff else abs_diff\n}\n\nprint(\"Result \" + test(60))\nprint(\"Result \" + test(30))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:29:49+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result 27Result 21\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int)Int\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719120_2130392761",
+      "id": "20220106-212839_1637779592",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7141",
+      "dateFinished": "2022-01-06T21:29:49+0530",
+      "dateStarted": "2022-01-06T21:29:49+0530"
+    },
+    {
+      "text": "\n// 4. Write a Scala program to check two given integers, and return true if one of them is 30 or if their sum is 30.\n\ndef test(x:Int, y:Int) : Boolean = {\n    x == 30 || y ==30 || (x + y) == 30\n}\n\nprintln(\"Result: \" + test(30, 0))\nprintln(\"Result: \" + test(0, 30))\nprintln(\"Result: \" + test(15, 15))\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:29:54+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: true\nResult: true\nResult: true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719120_243986315",
+      "id": "20220106-212839_1803618224",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7142",
+      "dateFinished": "2022-01-06T21:29:54+0530",
+      "dateStarted": "2022-01-06T21:29:54+0530"
+    },
+    {
+      "text": "\n// 5. Write a Scala program to check a given integer and return true if it is within 20 of 100 or 300. \n\ndef test(x:Int) : Boolean = {\n    x < 20 || x < 100 || x < 300\n}\n\nprintln(\"Result: \" + test(40))\nprintln(\"Result: \" + test(400))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:29:56+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: true\nResult: false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719120_1019584716",
+      "id": "20220106-212839_1970592014",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7143",
+      "dateFinished": "2022-01-06T21:29:56+0530",
+      "dateStarted": "2022-01-06T21:29:56+0530"
+    },
+    {
+      "text": "\n// 6. Write a Scala program to create a new string where 'if' is added to the front of a given string. If the string already begins with 'if', return the string unchanged.\n\ndef strTest(str: String) : String = {\n    if (str.startsWith(\"if\")) str else \"if\" + str\n}\n\nprintln(\"Result: \"+ strTest(\"Hello\"))\nprintln(\"Result: \"+ strTest(\"iftaar\"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:00+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: ifHello\nResult: iftaar\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_1399080369",
+      "id": "20220106-212839_813194130",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7144",
+      "dateFinished": "2022-01-06T21:30:00+0530",
+      "dateStarted": "2022-01-06T21:30:00+0530"
+    },
+    {
+      "text": "\n// 7. Write a Scala program to remove the character in a given position of a given string. The given position will be in the range 0...string length -1 inclusive.\n\ndef strTest(str : String, n: Int): String = {\n    str.take(n) + str.drop(n + 1)\n}\n\nprintln(strTest(\"Hello\", 0))\nprintln(strTest(\"Hello\", 1))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:04+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "ello\nHllo\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String, n: Int)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_58574368",
+      "id": "20220106-212839_624386013",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7145",
+      "dateFinished": "2022-01-06T21:30:04+0530",
+      "dateStarted": "2022-01-06T21:30:04+0530"
+    },
+    {
+      "text": "\n// 8. Write a Scala program to exchange the first and last characters in a given string and return the new string.\n\ndef strTest(str : String) : String = \n{\n    val len = str.length()\n    if(len <=1) str\n    else str.charAt(len - 1) + str.substring(1, len - 1) + str.charAt(0)\n}\n\nprintln(strTest(\"Hello\"));",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:06+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "oellH\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_1570655937",
+      "id": "20220106-212839_1189634124",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7146",
+      "dateFinished": "2022-01-06T21:30:06+0530",
+      "dateStarted": "2022-01-06T21:30:06+0530"
+    },
+    {
+      "text": "\nval str:String = \"Hello World\"\n\nval len = str.length()\nval lastChar = str.charAt(len - 1)\nval chars = str.substring(1, len -1 ) // all characters in the string except first and last",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:08+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mstr\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = Hello World\n\u001b[1m\u001b[34mlen\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 11\n\u001b[1m\u001b[34mlastChar\u001b[0m: \u001b[1m\u001b[32mChar\u001b[0m = d\n\u001b[1m\u001b[34mchars\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = ello Worl\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_243622079",
+      "id": "20220106-212839_361200950",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7147",
+      "dateFinished": "2022-01-06T21:30:08+0530",
+      "dateStarted": "2022-01-06T21:30:08+0530"
+    },
+    {
+      "text": "\n// 9. Write a Scala program to create a new string which is 4 copies of the 2 front characters of a given string.If the given string length is less than 2 return the original string.\n\ndef strTest(str: String) : String = {\n    if (str.length() < 2) str\n    else str.substring(0, 2) * 4\n}\n\nprintln(strTest(\"Hello\"))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:11+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "HeHeHeHe\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_2018506233",
+      "id": "20220106-212839_1733361887",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7148",
+      "dateFinished": "2022-01-06T21:30:11+0530",
+      "dateStarted": "2022-01-06T21:30:11+0530"
+    },
+    {
+      "text": "\n// 10. Write a Scala program to create a new string with the last char added at the front and back of a given string of length 1 or more.\n\ndef strTest(str:String) : String = {\n    val len = str.length()\n    val lastChar = str.charAt(len - 1)\n    lastChar + str + lastChar\n}\n\nprintln(strTest(\"Hello\"))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:13+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "oHelloo\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_1088766005",
+      "id": "20220106-212839_2013749855",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7149",
+      "dateFinished": "2022-01-06T21:30:13+0530",
+      "dateStarted": "2022-01-06T21:30:13+0530"
+    },
+    {
+      "text": "\n// 11. Write a Scala program to check whether a given positive number is a multiple of 3 or a multiple of 7.\n\ndef test(x:Int) : Boolean = {\n    x % 3 == 0 || x % 7 ==0\n}\n\nprintln(test(7))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:15+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_2078677097",
+      "id": "20220106-212839_2112390931",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7150",
+      "dateFinished": "2022-01-06T21:30:16+0530",
+      "dateStarted": "2022-01-06T21:30:15+0530"
+    },
+    {
+      "text": "\n// 12. Write a Scala program to create a new string taking the first 3 characters of a given string and return the string with the 3 characters added at both the front and back. \n// If the given string length is less than 3, use whatever characters are there.\n\ndef strTest(str: String) : String = {\n    if (str.length() < 3) str * 3\n    else str.substring(0, 3) + str + str.substring(0, 3)\n}\n\nprintln(strTest(\"Ho\"))\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:18+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "HoHoHo\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719121_215828885",
+      "id": "20220106-212839_1395141461",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7151",
+      "dateFinished": "2022-01-06T21:30:18+0530",
+      "dateStarted": "2022-01-06T21:30:18+0530"
+    },
+    {
+      "text": "\n// 13.  Write a Scala program to check whether a given string starts with 'Sc' or not.\n\ndef strTest(str: String) : Boolean = { \n    str.take(2) == \"Sc\"  \n}\n\nprintln(strTest(\"Scala\"))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:21+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719122_224467335",
+      "id": "20220106-212839_1007722007",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7152",
+      "dateFinished": "2022-01-06T21:30:21+0530",
+      "dateStarted": "2022-01-06T21:30:21+0530"
+    },
+    {
+      "text": "\ndef test(str1: String): Boolean = \n    {\n     str1.take(2) == \"Sc\"\n    }     \n      println(\"Result: \" + test(\"Scala\"));\n      println(\"Result: \" + test(\"abcd\"));\n      println(\"Result: \" + test(\"sc\"));\n      println(\"Result: \" + test(\"a\"));\n    ",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:23+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Result: true\nResult: false\nResult: false\nResult: false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(str1: String)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719122_837603539",
+      "id": "20220106-212839_2135295568",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7153",
+      "dateFinished": "2022-01-06T21:30:23+0530",
+      "dateStarted": "2022-01-06T21:30:23+0530"
+    },
+    {
+      "text": "\n// 14. Write a Scala program to check whether one of the given temperatures is less than 0 and the other is greater than 100.\n\ndef test(x:Int, y:Int) : Boolean = {\n    (x < 0 && y > 100) || (y < 0 && x > 100)\n}\n\nprintln(test(200, -20))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:25+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719122_1570434715",
+      "id": "20220106-212839_1185928884",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7154",
+      "dateFinished": "2022-01-06T21:30:25+0530",
+      "dateStarted": "2022-01-06T21:30:25+0530"
+    },
+    {
+      "text": "\n// 15. Write a Scala program to check two given integers whether either of them is in the range 100..200 inclusive.\n\ndef test(x:Int, y:Int) : Boolean = {\n    (x >= 100 && x <= 200) || (y >= 100 && y <= 200);\n}\n\nprintln(test(89, 100))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:27+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719122_343392877",
+      "id": "20220106-212839_1414479799",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7155",
+      "dateFinished": "2022-01-06T21:30:27+0530",
+      "dateStarted": "2022-01-06T21:30:27+0530"
+    },
+    {
+      "text": "\n// 16. Write a Scala program to check whether three given integer values are in the range 20..50 inclusive. Return true if 1 or more of them are in the said range otherwise false.\n\ndef test(x:Int, y:Int, z:Int) : Boolean = {\n    (x >= 20 && x <= 50) ||  (y >= 20 && y <= 50) || (z >= 20 && z <= 50)\n}\n\nprintln(test(30, 100, 200))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:29+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int, z: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719122_880444517",
+      "id": "20220106-212839_1821897487",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7156",
+      "dateFinished": "2022-01-06T21:30:29+0530",
+      "dateStarted": "2022-01-06T21:30:29+0530"
+    },
+    {
+      "text": "\n// 17. 17. Write a Scala program to check whether two given integer values are in the range 20..50 inclusive. Return true if 1 or other is in the said range otherwise false.\ndef test(x:Int, y:Int) : Boolean = {\n    (x <= 20 || y >= 50) ||  (y <= 20 || x >= 50) \n}\n\nprintln(test(25, 40))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:31+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719122_2085236674",
+      "id": "20220106-212839_590089291",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7157",
+      "dateFinished": "2022-01-06T21:30:31+0530",
+      "dateStarted": "2022-01-06T21:30:31+0530"
+    },
+    {
+      "text": "\n// 18. Write a Scala program to check whether a string 'yt' appears at index 1 in a given string. If it appears return a string without 'yt' otherwise return the original string.\n\ndef strTest(str: String) : String = {\n    if (str.indexOf(\"yt\") == 1) str.replaceFirst(\"yt\", \"\")\n    else str\n}\n\nprintln(strTest(\" yt video\"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:33+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  video\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719122_1028832768",
+      "id": "20220106-212839_462320876",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7158",
+      "dateFinished": "2022-01-06T21:30:33+0530",
+      "dateStarted": "2022-01-06T21:30:33+0530"
+    },
+    {
+      "text": "\n// 19. Write a Scala program to check the largest number among three given integers. \n\ndef test(x:Int, y:Int, z:Int) : Int = {\n    List(x, y, z).max\n}\n\nprintln(test(1, 2, 3))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:35+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "3\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int, z: Int)Int\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719124_1120280844",
+      "id": "20220106-212839_907100845",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7159",
+      "dateFinished": "2022-01-06T21:30:35+0530",
+      "dateStarted": "2022-01-06T21:30:35+0530"
+    },
+    {
+      "text": "\n// 20. Write a Scala program to check which number is nearest to the value 100 among two given integers. Return 0 if the two numbers are equal.\n\ndef test(x:Int, y:Int) : Int = {\n    val x_diff = Math.abs(x - 100)\n    val y_diff = Math.abs(y - 100)\n    if (x_diff == y_diff) 0\n    else if (x_diff < y_diff) x\n    else y\n}\n\nprintln(test(95, 90))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:30:57+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "95\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Int\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719124_843247347",
+      "id": "20220106-212839_1707983083",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7160",
+      "dateFinished": "2022-01-06T21:30:58+0530",
+      "dateStarted": "2022-01-06T21:30:57+0530"
+    },
+    {
+      "text": "\n// 21. Write a Scala program to check whether two given integers are in the range 40..50 inclusive, or they are both in the range 50..60 inclusive.\n\ndef test(x:Int, y:Int) : Boolean = {\n     List(x, y).forall { m => m >= 40 && m <= 50 } || List(x, y).forall { n => n >= 50 && n <= 60 }\n}\n\nprintln(test(78, 95))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:31:00+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719124_498148150",
+      "id": "20220106-212839_641779277",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7161",
+      "dateFinished": "2022-01-06T21:31:00+0530",
+      "dateStarted": "2022-01-06T21:31:00+0530"
+    },
+    {
+      "text": "\n// lambda expression\n    val ex1 = (x:Int) => x + 2\n  \n    // with multiple parameters\n    val ex2 = (x:Int, y:Int) => x * y\n      \n    println(ex1(7))\n    println(ex2(2, 3))\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:31:02+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "9\n6\n\u001b[1m\u001b[34mex1\u001b[0m: \u001b[1m\u001b[32mInt => Int\u001b[0m = $Lambda$2060/124595926@33dad845\n\u001b[1m\u001b[34mex2\u001b[0m: \u001b[1m\u001b[32m(Int, Int) => Int\u001b[0m = $Lambda$2061/1535463825@1ac60eb5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719124_1228344078",
+      "id": "20220106-212839_1308753789",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7162",
+      "dateFinished": "2022-01-06T21:31:02+0530",
+      "dateStarted": "2022-01-06T21:31:02+0530"
+    },
+    {
+      "text": "\n// 22. Write a Scala program to find the larger value from two positive integer values in the range 20..30 inclusive, or return 0 if neither is in that range.\n\ndef test(x:Int,y:Int) : Int = {\n    val res = List(x,y).max\n    if(res >= 20 && res <= 30) res else 0\n}\n\nprintln(test(25, 30))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:31:04+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "30\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Int\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719125_748896611",
+      "id": "20220106-212839_1924782138",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7163",
+      "dateFinished": "2022-01-06T21:31:05+0530",
+      "dateStarted": "2022-01-06T21:31:04+0530"
+    },
+    {
+      "text": "\n// 23. Write a Scala program to check whether a given character presents in a string between 2 to 4 times.\n\ndef strTest(str:String, ichar:Char): Boolean = {\n    val counts = str.count(_ == ichar)\n    counts >= 2 && counts <= 4\n}\n\nprintln(strTest(\"Hello\", 'l'))\nprintln(strTest(\"Helo\", 'l'))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:31:07+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\nfalse\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String, ichar: Char)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719125_1857297770",
+      "id": "20220106-212839_2046333982",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7164",
+      "dateFinished": "2022-01-06T21:31:07+0530",
+      "dateStarted": "2022-01-06T21:31:07+0530"
+    },
+    {
+      "text": "\n// 24. Write a Scala program to check whether two given positive integers have the same last digit.\n\ndef test(x:Int, y:Int): Boolean = {\n    Math.abs(x % 10) == Math.abs(y % 10)\n}\n\nprintln(test(489, 305))\nprintln(test(40, 30))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:31:09+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\ntrue\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719125_568088864",
+      "id": "20220106-212839_1504331714",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7165",
+      "dateFinished": "2022-01-06T21:31:09+0530",
+      "dateStarted": "2022-01-06T21:31:09+0530"
+    },
+    {
+      "text": "\n// 25. Write a Scala program to convert the last 4 characters of a given string in upper case. If the length of the string has less than 4 then uppercase all the characters.\n\ndef strTest(str:String): String = {\n    if (str.length >=4) {\n        str.take(str.length() - 4) + str.drop(str.length() - 4).toUpperCase()\n    }\n    else str.toUpperCase()\n}\n\nprintln(strTest(\"Hello\"))\nprintln(strTest(\"python\"))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:31:11+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "HELLO\npyTHON\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719125_1915341162",
+      "id": "20220106-212839_403808669",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7166",
+      "dateFinished": "2022-01-06T21:31:11+0530",
+      "dateStarted": "2022-01-06T21:31:11+0530"
+    },
+    {
+      "text": "\n// 26. Write a Scala program to create a new string which is n (non-negative integer ) copies of a given string.\n\ndef strTest(str:String, n: Int) : String = {\n    str * Math.abs(n)\n}\n\nprintln(strTest(\"Hello\", 6))",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-06T21:31:14+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {},
+        "editorMode": "ace/mode/python",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "HelloHelloHelloHelloHelloHello\n\u001b[1m\u001b[34mstrTest\u001b[0m: \u001b[1m\u001b[32m(str: String, n: Int)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641484719125_1684078913",
+      "id": "20220106-212839_609604269",
+      "dateCreated": "2022-01-06T21:28:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:7167",
+      "dateFinished": "2022-01-06T21:31:15+0530",
+      "dateStarted": "2022-01-06T21:31:14+0530"
+    }
+  ],
+  "name": "Scala - basics",
+  "id": "2GSCPJXP7",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Scala - basics",
+  "checkpoint": {
+    "message": "nice"
+  }
+}
